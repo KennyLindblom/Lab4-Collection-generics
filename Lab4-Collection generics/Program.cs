@@ -127,14 +127,19 @@ namespace Lab4_Collection_generics
             {
                 Console.WriteLine("Employee2 does not exists in the list ");
             }
-
+            Console.WriteLine("-------------------------------------------------------");
             Console.WriteLine("Find the first male in list ");
+
             Employee FindGender = listEmp.Find(G => G.Gender == "Male");
 
+
+
             Console.WriteLine("\n ID = {0} -- Name = {1} -- Gender = {2} -- Salary = {3}", FindGender.ID, FindGender.Name, FindGender.Gender, FindGender.Salary);
+            Console.WriteLine("-------------------------------------------------------");
 
 
             List<Employee> findAllGender = listEmp.FindAll(G => G.Gender == "Male");
+            Console.WriteLine("Find all male in list ");
 
             foreach (Employee item in findAllGender)
             {
