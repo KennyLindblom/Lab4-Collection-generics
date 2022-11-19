@@ -106,6 +106,45 @@ namespace Lab4_Collection_generics
 
             Console.WriteLine("------------Del2-----------------------------");
 
+
+            //List 
+            List<Employee> listEmp = new List<Employee>();
+            listEmp.Add(E1);
+            listEmp.Add(E2);    
+            listEmp.Add(E3);
+            listEmp.Add(E4);
+            listEmp.Add(E5);
+
+            Console.WriteLine("Does list contain Emploeyee 2? ");
+
+            if (listEmp.Contains(E2)) 
+            {
+                Console.WriteLine("Emploeyee object exsits in list ");
+
+            }
+
+            else
+            {
+                Console.WriteLine("Employee2 does not exists in the list ");
+            }
+
+            Console.WriteLine("Find the first male in list ");
+            Employee FindGender = listEmp.Find(G => G.Gender == "Male");
+
+            Console.WriteLine("\n ID = {0} -- Name = {1} -- Gender = {2} -- Salary = {3}", FindGender.ID, FindGender.Name, FindGender.Gender, FindGender.Salary);
+
+
+            List<Employee> findAllGender = listEmp.FindAll(G => G.Gender == "Male");
+
+            foreach (Employee item in findAllGender)
+            {
+                Console.WriteLine(" ID = {0} -- Name = {1} -- Gender = {2} -- Salary = {3}", item.ID, item.Name, item.Gender, item.Salary);
+
+            }
+
+            
+
+
         }
 
        
