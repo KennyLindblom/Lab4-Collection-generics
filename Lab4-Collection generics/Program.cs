@@ -67,8 +67,8 @@ namespace Lab4_Collection_generics
             {
                 Employee DelEmp =  stEmp.Pop();
                 Console.WriteLine("ID = {0} \n Name = {1} \n Gender = {2} \n Salary = {3}", DelEmp.ID, DelEmp.Name, DelEmp.Gender, DelEmp.Salary);
-                Console.WriteLine("Item left in stock " + stEmp.Count);
-                Console.WriteLine("/////////////////////////////////");
+                Console.WriteLine("Item left in stack " + stEmp.Count);
+                Console.WriteLine(".................................");
 
 
             }
